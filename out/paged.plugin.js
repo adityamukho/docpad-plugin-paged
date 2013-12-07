@@ -73,7 +73,7 @@
           page = document.get('page');
           result = '#';
           if (page.number < page.count - 1) {
-            result = this.getPageUrl(page.number + 1, document);
+            result = this.getPagedUrl(page.number + 1, document);
           }
           return result;
         };
@@ -94,7 +94,7 @@
           page = document.get('page');
           result = '#';
           if (page.number > 0) {
-            result = this.getPageUrl(page.number - 1, document);
+            result = this.getPagedUrl(page.number - 1, document);
           }
           return result;
         };
